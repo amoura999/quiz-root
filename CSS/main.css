@@ -1,0 +1,337 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+section {
+  padding: 100px 0;
+  background-color: #f7f7f7;
+}
+.top-5 {
+  top: 5px;
+}
+.start-5 {
+  left: 5px;
+}
+.end-5 {
+  right: 5px;
+}
+.buttom-5 {
+  bottom: 5px;
+}
+.navbar-nav a {
+  color: white !important;
+}
+a {
+  color: inherit;
+}
+/* ----------------------------------- */
+.daniel {
+  background-image: url("../imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: relative;
+}
+.daniel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.daniel-content {
+  position: relative;
+  z-index: 2;
+}
+.daniel .icons a {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+/* ----------------------------- */
+.about .image::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  left: -30px;
+  z-index: -1;
+  bottom: -30px;
+}
+.about .title {
+  color: #999;
+}
+.about p {
+  color: #748182;
+}
+.about .tube {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+  position: relative;
+  padding: 14px 10px;
+  margin: 40px 0px;
+}
+.about .content-back {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  position: absolute;
+  padding: 5px 10px;
+  top: 0;
+  left: 0;
+}
+.w-95 {
+  width: 95%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-90 {
+  width: 90%;
+}
+.about .download {
+  border-radius: 5px;
+  background-color: black;
+  padding: 5px;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+.about .download:hover {
+  background-color: white;
+  border: 1px black solid;
+  cursor: pointer;
+}
+.about .download:hover span {
+  color: black;
+}
+.about .contact {
+  border-radius: 5px;
+  background-color: white;
+  border: 1px black solid;
+  padding: 5px;
+  color: black;
+  transition: all 0.2s ease-in;
+}
+.about .contact:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.about .contact:hover span {
+  color: white;
+}
+/* ----------------------------------------- */
+.services h1::after,
+.portfolio h1::after,
+.slider h1::after,
+.team h1::after,
+.contact h1::after {
+  content: "";
+  width: 20%;
+  height: 20px;
+  position: absolute;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  left: 40%;
+  top: 40px;
+  z-index: -1;
+}
+.services .icon {
+  height: 80px;
+  width: 80px;
+  background: rgba(216, 216, 216, 0.275);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+.services .content {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.services .content .icon {
+  transition: all 0.3s ease-in-out;
+}
+.services .content:hover .icon {
+  background: black;
+  color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------------------------ */
+.portfolio .content .content .icon,
+.team .icon {
+  height: 50px;
+  width: 50px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  transition: all 0.3s ease;
+}
+.portfolio .overlay {
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.portfolio .content:hover .overlay {
+  opacity: 1;
+}
+.portfolio .content .content .icon:hover,
+.team .icon:hover {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+#pills-tab {
+  display: flex;
+  justify-content: center;
+}
+.nav-link {
+  background-color: transparent !important;
+  color: black !important;
+}
+.nav-link.active {
+  border-bottom: 2px solid black;
+  color: black !important;
+  background-color: transparent !important;
+}
+/* ------------------------------------------- */
+.slider img {
+  width: 90px;
+}
+.custom-carousel-button.active {
+  background-color: grey;
+}
+.custom-carousel-circle.active {
+  width: 15px;
+  height: 15px;
+  background-color: darkgray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-carousel-circle.test {
+  width: 15px;
+  height: 15px;
+  background-color: darkgray;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* -------------------------------------------- */
+.number .cardd .icon i {
+  font-size: 36px;
+  font-weight: 800;
+}
+/* --------------------------------- */
+.team .card-body {
+  background: #5b5b5b;
+}
+.team .card {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .card .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .card .image img {
+  transition: transform 0.5s ease-in-out;
+}
+.team .card:hover .image img {
+  transform: scale(1.2);
+}
+.team .card .image .overlay {
+  opacity: 0;
+  visibility: hidden;
+  transform: rotateY(180deg);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out;
+}
+.team .card:hover .image .overlay {
+  opacity: 0.9;
+  visibility: visible;
+  transform: rotateY(0);
+}
+.team .card .image .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.team .icons {
+  display: flex;
+  gap: 10px;
+}
+/* --------------------------------------- */
+.contact .icon {
+  font-size: 25px;
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .test:hover .icon {
+  color: white;
+  background-color: black;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f4f4f4;
+}
+.contact textarea {
+  height: 160px;
+  max-height: 160px;
+  max-width: 100%;
+}
+.contact .buton {
+  padding: 10px 40px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  transition: all 0.4s ease;
+}
+.contact .buton:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
